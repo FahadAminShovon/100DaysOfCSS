@@ -18,7 +18,13 @@
       <form id="survey-form">
         <div class="form-group">
           <label for="name" id="name-label">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required class="form-control" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+            class="form-control"
+          />
         </div>
 
         <div class="form-group">
@@ -34,7 +40,9 @@
         </div>
 
         <div class="form-group">
-          <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
+          <label for="number" id="number-label"
+            >Age<span class="clue">(optional)</span></label
+          >
           <input
             type="number"
             name="number"
@@ -60,7 +68,7 @@
           </select>
         </div>
 
-        <div class="from-group">
+        <div class="form-group">
           <p>Would You recommend freeCodeCamp to a friend?</p>
 
           <label>
@@ -91,8 +99,8 @@
           >
         </div>
 
-        <div class="from-group">
-          <label for="most-like" id="most-like-label"></label>
+        <div class="form-group">
+          <p>Which feature do you like most?</p>
           <select name="feature" id="most-like" class="form-control">
             <option value="" disabled selected>Select an option</option>
             <option value="student">Challanges</option>
@@ -144,13 +152,13 @@
             />Challanges</label
           >
 
-          <labe>
+          <label>
             <input
               type="checkbox"
               name="open-source-community"
               id="open-source-community"
               value="open_source_community"
-            />Open Source Community</labe
+            />Open Source Community</label
           >
 
           <label>
@@ -222,8 +230,6 @@
           <button type="submit" id="submit">Submit</button>
         </div>
       </form>
-
-      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </div>
   </body>
 </html>
