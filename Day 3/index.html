@@ -9,8 +9,8 @@
   <body>
     <div class="container">
       <header>
-        <h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description text-center">
           Thank you for taking the time to help us improve the platform
         </p>
       </header>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="form-group">
-          <label for="number" id="number-label">Age(optional)</label>
+          <label for="number" id="number-label">Age<span class="clue">(optional)</span></label>
           <input
             type="number"
             name="number"
@@ -105,7 +105,7 @@
         <div class="form-group">
           <p>
             What would you like to see improved?
-            <span>(check all that apply)</span>
+            <span class="clue">(check all that apply)</span>
           </p>
 
           <label>
@@ -211,12 +211,16 @@
         <label for="text-area" id="text-area-label"
           >Any comments or suggestions?</label
         >
-        <textarea
-          id="text-area"
-          placeholder="Enter Your Comment here..."
-        ></textarea>
+        <div class="form-group">
+          <textarea
+            id="text-area"
+            placeholder="Enter Your Comment here..."
+          ></textarea>
+        </div>
 
-        <button type="submit" id="submit">Submit</button>
+        <div class="form-group">
+          <button type="submit" id="submit">Submit</button>
+        </div>
       </form>
 
       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
