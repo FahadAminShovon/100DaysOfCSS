@@ -11,37 +11,44 @@ body {
   font-family: 'Nunito', 'sans-serif';
 }
 
-.container {
-  width: 30%;
-  background: white;
-  border-radius: 10px;
-}
-
-.container .inner {
-  background: #00B6FF;
+.inner {
+  background: #07daa5;
   padding: 1em;
   border-radius: 10px;
-  width: 100%;
-  -webkit-clip-path: circle(8% at 0% 0%);
-          clip-path: circle(8% at 0% 0%);
-  -webkit-transition: -webkit-clip-path .5s ease-in-out;
-  transition: -webkit-clip-path .5s ease-in-out;
-  transition: clip-path .5s ease-in-out;
-  transition: clip-path .5s ease-in-out, -webkit-clip-path .5s ease-in-out;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-.container .inner h1 {
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00B6FF;
+}
+
+.inner:hover span {
+  color: rgba(255, 255, 255, 0);
+}
+
+.inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.inner h1 {
   color: white;
   margin: 0;
 }
 
-.container .inner p {
+.inner p {
   color: white;
   font-size: .8rem;
-}
-
-.container:hover .inner {
-  -webkit-clip-path: circle(75%);
-          clip-path: circle(75%);
 }
 /*# sourceMappingURL=main.css.map */

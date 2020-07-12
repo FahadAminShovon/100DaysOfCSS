@@ -8,32 +8,40 @@ body {
     font-family: 'Nunito', 'sans-serif';
 }
 
-.container {
-    width: 30%;
-    background: white;
+
+.inner {
+    background: rgb(7, 218, 165);
+    padding: 1em;
     border-radius: 10px;
+    width: 250px;
+    clip-path: circle(10% at 90% 20%);
+    transition: all .5s ease-in-out;
 
-    .inner {
+    &:hover {
+        clip-path: circle(75%);
         background: #00B6FF;
-        padding: 1em;
-        border-radius: 10px;
-        width: 100%;
-        clip-path: circle(8% at 0% 0%);
-        transition: clip-path .5s ease-in-out;
 
-        h1 {
-            color: white;
-            margin: 0;
-        }
-
-        p {
-            color: white;
-            font-size: .8rem;
+        span {
+            color: rgba(255, 255, 255, 0);;
         }
     }
 
+    span {
+        float: right;
+        color: white;
+        font-weight: bold;
+        transition: color .5s;
+        position: relative;
+        margin-right: 4%;
+    }
 
-    &:hover .inner {
-        clip-path: circle(75%);
+    h1 {
+        color: white;
+        margin: 0;
+    }
+
+    p {
+        color: white;
+        font-size: .8rem;
     }
 }
