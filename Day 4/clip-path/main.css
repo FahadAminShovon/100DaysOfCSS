@@ -11,44 +11,26 @@ body {
   font-family: 'Nunito', 'sans-serif';
 }
 
-.inner {
+.container {
+  width: 30%;
+  background: white;
+  border-radius: 10px;
+}
+
+.container .inner {
   background: #07daa5;
   padding: 1em;
   border-radius: 10px;
-  width: 250px;
-  -webkit-clip-path: circle(10% at 90% 20%);
-          clip-path: circle(10% at 90% 20%);
+  width: calc(100% - 2em);
+  -webkit-clip-path: inset(0% 0% 0% 100%);
+          clip-path: inset(0% 0% 0% 100%);
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  cursor: pointer;
 }
 
-.inner:hover {
-  -webkit-clip-path: circle(75%);
-          clip-path: circle(75%);
-  background: #00B6FF;
-}
-
-.inner:hover span {
-  color: rgba(255, 255, 255, 0);
-}
-
-.inner span {
-  float: right;
-  color: white;
-  font-weight: bold;
-  -webkit-transition: color .5s;
-  transition: color .5s;
-  position: relative;
-  margin-right: 4%;
-}
-
-.inner h1 {
-  color: white;
-  margin: 0;
-}
-
-.inner p {
-  color: white;
-  font-size: .8rem;
+.container:hover .inner {
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
 }
 /*# sourceMappingURL=main.css.map */
