@@ -84,6 +84,7 @@ nav ul li {
   border: none;
   font-size: 1em;
   max-width: 150px;
+  padding: 0.5rem 1rem;
 }
 
 .btn:hover {
@@ -172,7 +173,7 @@ input[type="email"] {
 
 .product button {
   font-weight: 300;
-  padding: 0.5rem 1rem;
+  
 }
 
 footer {
