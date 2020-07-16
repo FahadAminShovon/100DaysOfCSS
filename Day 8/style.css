@@ -127,6 +127,8 @@ code p {
   }
 
   main {
+    max-width: 100vw;
     margin-left: auto;
+    padding-left: 2rem;
   }
 }
