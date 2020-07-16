@@ -85,15 +85,20 @@ main p {
 }
 
 .section-group {
-  padding: 0.5rem 1.5rem 0rem 2rem;
+  padding: 0.5rem 2rem 0rem 2rem;
 }
 
 .section-group li {
   margin-bottom: 0.5rem;
+  padding-right: 1rem;
 }
 
 .section-group li :last-child {
   margin-bottom: 2rem;
+}
+
+.section-group p {
+  padding-right: 1.3rem;
 }
 
 code {
