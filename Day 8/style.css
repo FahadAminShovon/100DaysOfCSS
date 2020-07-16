@@ -1,26 +1,47 @@
-.body {
-  background : #FFFFFF;
-  height: 100%;
-  width: 100%;
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5em;
+}
+
+:root {
+  --color-white: #f3f3f3;
+  --color-code: #f7f7f7;
+}
+
+body {
   display: flex;
+  background: #ffffff;
+  height: 100vh;
+  width: 100vw;
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
-header{
+.header-class {
   flex: 1;
   border-right: 2px solid black;
-  width: 25vw;
+  width: 300px;
   height: 100vh;
+  position: fixed;
 }
 
-header nav {
-  /* height: ; */
+h1 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  min-height: auto;
+  padding-left: 2rem;
+  margin: 10px 0px;
+}
+
+.header-class nav {
+  max-height: 90vh;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
 }
 
-header nav ul {
+.header-class nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -29,14 +50,83 @@ header nav ul {
   justify-content: center;
 }
 
-header nav ul li {
-  padding: 1rem;
-  border-top: 1px solid #A8A8A8;
+.header-class nav ul li {
+  padding: 0.8rem;
+  padding-left: 2rem;
+  border-top: 1px solid #a8a8a8;
 }
 
-header nav ul li  a{
+.header-class nav ul li a {
   text-decoration: none;
-  color: #5B5C60;
+  color: #5b5c60;
 }
 
+main {
+  width: auto;
+  margin-left: 300px;
+  padding: 1rem;
+  font-size: 1rem;
+}
 
+main h1 {
+  margin-top: 30px;
+  padding-left: 1rem;
+  margin-bottom: 0px;
+}
+
+main p {
+  margin: 5px;
+}
+
+.section-group {
+  padding: 0.5rem 1.5rem 0rem 2rem;
+}
+
+.section-group li {
+  margin-bottom: 0.5rem;
+}
+
+.section-group li :last-child {
+  margin-bottom: 0rem;
+}
+
+code {
+  display: block;
+  margin: 0rem 2rem;
+  padding: 1rem;
+  background-color: var(--color-code);
+}
+
+code p {
+  font-family: "Fira Code", monospace;
+}
+
+.footer {
+  margin-bottom: 20vh;
+}
+
+@media screen and (max-width: 735px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-class {
+    position: relative;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .header-class nav {
+    height: 200px;
+    border: 2px solid black;
+  }
+
+  .header-class nav li {
+    display: flex;
+  }
+
+  main {
+    margin-left: auto;
+  }
+}
