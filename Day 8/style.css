@@ -2,6 +2,8 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
+  word-wrap: break-word;
+
 }
 
 :root {
@@ -10,7 +12,7 @@
 }
 
 body {
-  display: flex;
+  /* display: flex; */
   background: #ffffff;
   height: 100vh;
   width: 100vw;
@@ -72,6 +74,7 @@ main {
   margin-left: 300px;
   padding: 1rem;
   font-size: 1rem;
+  padding-right: 2rem;
 }
 
 main h1 {
