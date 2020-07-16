@@ -25,8 +25,6 @@ body {
   width: 300px;
   height: 100vh;
   position: fixed;
-  display: flex;
-  flex-direction: column;
 }
 
 h1 {
@@ -37,8 +35,12 @@ h1 {
   margin: 10px 0px;
 }
 
+.header-class h1 {
+  padding: 1rem;
+}
+
 .header-class nav {
-  max-height: auto;
+  max-height: 90vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -50,6 +52,8 @@ h1 {
   text-align: left;
   padding: 0px;
   justify-content: center;
+  margin: 0px auto;
+  margin-bottom: 1rem;
 }
 
 .header-class nav ul li {
@@ -89,7 +93,7 @@ main p {
 }
 
 .section-group li :last-child {
-  margin-bottom: 0rem;
+  margin-bottom: 2rem;
 }
 
 code {
@@ -123,6 +127,7 @@ code p {
   .header-class nav {
     height: 200px;
     border: 2px solid black;
+    width: 98vw;
   }
 
   .header-class nav li {
