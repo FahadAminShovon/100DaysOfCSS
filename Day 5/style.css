@@ -47,6 +47,7 @@ nav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-left: 0px;
 }
 
 nav ul li {
@@ -215,8 +216,10 @@ footer span {
     margin: 0px auto;
   }
   header {
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    padding-left: 0px;
   }
   nav {
     margin: 0px auto;

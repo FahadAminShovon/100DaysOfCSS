@@ -7,4 +7,4 @@
 * Day 5 - [A landing page](https://codepen.io/FahadShovon/full/yLeqRzq)
 * Day 6 - [Rotating Gear](https://codepen.io/FahadShovon/full/gOPdwZO)
 * Day 7 - [Video background](https://codepen.io/FahadShovon/full/MWKqRRo)
-* Day 9 - [A documentation page](https://codepen.io/FahadShovon/full/BajqmWm)
+* Day 8 - [A documentation page](https://codepen.io/FahadShovon/full/BajqmWm)
