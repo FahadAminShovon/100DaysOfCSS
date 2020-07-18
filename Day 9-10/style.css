@@ -11,26 +11,22 @@
 
 html {
   scroll-behavior: smooth;
-  /* transition: 3s ease-in; */
 }
 
 body {
   padding: 0px;
   margin: 0px;
-  position: relative;
-  /* background-color: black; */
 }
 
 * {
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  text-align: center;
+
 }
 
 nav {
   background-color: #be3144;
-  /* padding: 2rem; */
-  width: 100%;
-  /* text-align: right; */
+  width: 100vw;
 }
 
 #navbar {
@@ -40,21 +36,23 @@ nav {
 nav ul {
   margin: 0px;
   display: flex;
-  padding: 1rem 0rem;
+  padding: .5rem 0rem;
   max-width: 400px;
   justify-content: space-around;
   margin-left: auto;
   margin-right: 1.5rem;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
   text-decoration: none;
   color: var(--main-white);
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 #welcome-section {
+  box-sizing: border-box;
   padding-top: 100px;
   height: 100vh;
   width: 100%;
@@ -68,7 +66,7 @@ nav ul li a {
 #welcome-section h1,
 #contacts h1 {
   color: var(--main-white);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   margin: 0px auto;
 }
@@ -77,7 +75,7 @@ nav ul li a {
   font-weight: lighter;
   color: var(--main-red);
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 0rem;
 }
 
@@ -90,33 +88,30 @@ nav ul li a {
 
 #projects header {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--main-white);
   padding-top: 100px;
   padding-bottom: 10px;
   text-align: center;
   border-bottom: 4px solid var(--main-white);
-  border-radius: 2px;
 }
 
 .showcase {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* flex-direction: column; */
   width: 95vw;
-  margin: auto;
   padding-bottom: 50px;
+  margin: auto;
 }
 
 .project-tile {
   margin-top: 50px;
-  height: 400px;
+  max-height: 400px;
   width: 30%;
   background-color: var(--project-color);
   display: flex;
   align-items: stretch;
-  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -127,7 +122,6 @@ span {
   min-height: 50px;
   padding-top: 7px;
   margin: auto;
-  /* padding: 1.2rem 0rem; */
   font-weight: normal;
   font-size: 1.5rem;
 }
@@ -191,12 +185,16 @@ img {
 }
 
 .links {
+  padding: 1rem;
+  padding-top: 3rem;
   display: flex;
   min-width: 70vw;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .links a {
+  padding: 1rem;
   font-size: 0.8rem;
   text-decoration: none;
   color: var(--main-white);
@@ -216,3 +214,61 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+
+footer a{
+  color: var(--main-white);
+  text-decoration: none;
+}
+
+
+/* font resize projects header
+   font resize porject project link title
+   font resize links */
+
+
+@media (max-width: 576px) { 
+  #projects header {
+  display: inline-block;
+  font-size: 3rem;
+  padding-top: 1rem;
+  margin: 1rem;
+  }
+
+  .showcase {
+    flex-direction: column;
+  }
+
+  .project-tile {
+    margin: 1rem auto;
+    min-width: 95%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin: auto;
+  }
+
+  .links a{
+    font-size: .5rem;
+  }
+
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  #projects header {
+  display: inline-block;
+  font-size: 2rem;
+  }
+
+  .project-tile {
+    width: 45%;
+    padding-bottom: 1rem;
+  }
+ }
+
