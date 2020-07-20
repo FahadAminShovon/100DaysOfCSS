@@ -21,7 +21,6 @@ body {
 * {
   font-family: "Roboto", sans-serif;
   text-align: center;
-
 }
 
 nav {
@@ -36,7 +35,7 @@ nav {
 nav ul {
   margin: 0px;
   display: flex;
-  padding: .5rem 0rem;
+  padding: 0.5rem 0rem;
   max-width: 400px;
   justify-content: space-around;
   margin-left: auto;
@@ -56,7 +55,8 @@ nav ul li a {
   padding-top: 100px;
   height: 100vh;
   width: 100%;
-  background-color: var(--main-black);
+  /*   background-color: var(--main-black); */
+  background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,6 +113,7 @@ nav ul li a {
   display: flex;
   align-items: stretch;
   flex-direction: column;
+  padding-bottom: 1rem;
 }
 
 .project-tile h1,
@@ -167,8 +168,9 @@ img {
 }
 
 #contacts {
+  box-sizing: border-box;
   display: flex;
-  min-height: 80vh;
+  min-height: 85vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -206,6 +208,8 @@ footer p {
 }
 
 footer {
+  box-sizing: border-box;
+  height: 15vh;
   font-size: 1rem;
   color: var(--main-white);
   padding: 2rem 0px;
@@ -215,24 +219,21 @@ footer {
   justify-content: space-between;
 }
 
-
-footer a{
+footer a {
   color: var(--main-white);
   text-decoration: none;
 }
-
 
 /* font resize projects header
    font resize porject project link title
    font resize links */
 
-
-@media (max-width: 576px) { 
+@media (max-width: 576px) {
   #projects header {
-  display: inline-block;
-  font-size: 3rem;
-  padding-top: 1rem;
-  margin: 1rem;
+    display: inline-block;
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin: 1rem;
   }
 
   .showcase {
@@ -252,23 +253,19 @@ footer a{
     margin: auto;
   }
 
-  .links a{
-    font-size: .5rem;
+  .links a {
+    font-size: 0.5rem;
   }
+}
 
-
- }
-
- /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   #projects header {
-  display: inline-block;
-  font-size: 2rem;
+    display: inline-block;
+    font-size: 2rem;
   }
 
   .project-tile {
     width: 45%;
     padding-bottom: 1rem;
   }
- }
-
+}
