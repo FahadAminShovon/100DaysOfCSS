@@ -11,3 +11,5 @@
 - Day 9-10 - [A personal protfolio](https://codepen.io/FahadShovon/full/abdQWKa)
 - Day 11 - [Mega menu](https://codepen.io/FahadShovon/full/GRowaXK)
 - Day 12 - [A spinner](https://codepen.io/FahadShovon/full/yLeGvGb)
+- Day 13 - [A split screen](https://codepen.io/FahadShovon/full/Yzwdooq)
+- Day 14-15 - [Social media accordion](https://codepen.io/FahadShovon/full/YzwBOpW)
