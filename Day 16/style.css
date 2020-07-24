@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Unica+One|Vollkorn");
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --ss-font: 'Unica One';
+  --s-font: 'Vollkorn';
+  --clr-red: #c31;
+  --clr-black: rgba(0, 0, 0, 0.1);
+  --clr-gray: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  font-size: 1rem;
+  text-align: center;
+  font-style: var(--s-font);
+  line-height: 1.4;
+  color: var(--clr-gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--ss-font);
+  text-transform: uppercase;
+  line-height: 0.9;
+  color: var(--clr-red);
+}
+
+.intro {
+  position: relative;
+  display: inline-block;
+}
+
+h1::before,
+h1::after {
+  content: '';
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+h1::before {
+  background-color: var(--clr-red);
+  width: 100vw;
+  z-index: -2;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+h1::after {
+  background-color: white;
+  z-index: -1;
+  left: -.2em;
+  right: -.2em;
+}
+
+p {
+  margin-top: .25em;
+}
+
+a {
+  color: var(--clr-red);
+}
+
+.intro {
+  font-size: 4rem;
+}
+
+.container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  position: relative;
+  margin: 1em;
+  background-color: var(--clr-gray);
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  top: 1.25em;
+  bottom: 1.25em;
+  left: 1.25em;
+  right: 1.25em;
+  -webkit-transition: -webkit-transform ease-out 250ms;
+  transition: -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms;
+  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.card::before {
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+.card:hover::before {
+  -webkit-transform: scale(1.05, 1);
+          transform: scale(1.05, 1);
+}
+
+.card::after {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+}
+
+.card:hover::after {
+  -webkit-transform: scale(1, 1.05);
+          transform: scale(1, 1.05);
+}
+
+.card__img {
+  max-width: 100%;
+  display: block;
+  opacity: 1;
+  -webkit-transition: all ease-out 250ms;
+  transition: all ease-out 250ms;
+}
+
+.card:hover .card__img {
+  opacity: 0.4;
+}
+
+.card__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 250ms;
+  transition: opacity ease-out 250ms;
+}
+
+.card:hover .card__text {
+  opacity: 1;
+}
+
+.card__title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.source {
+  opacity: .8;
+  position: absolute;
+  width: 100%;
+  bottom: 1em;
+}
+/*# sourceMappingURL=style.css.map */
