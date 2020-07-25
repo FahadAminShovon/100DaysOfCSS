@@ -13,3 +13,5 @@
 - Day 12 - [A spinner](https://codepen.io/FahadShovon/full/yLeGvGb)
 - Day 13 - [A split screen](https://codepen.io/FahadShovon/full/Yzwdooq)
 - Day 14-15 - [Social media accordion](https://codepen.io/FahadShovon/full/YzwBOpW)
+- Day 16 [A hover effect using ::before and ::after](https://codepen.io/FahadShovon/full/RwrdvJy)
+- Day 17 [A split screen landing page](https://codepen.io/FahadShovon/full/ZEQZOBL)
