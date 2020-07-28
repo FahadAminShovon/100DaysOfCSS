@@ -17,3 +17,4 @@
 - Day 17 [A split screen landing page](https://codepen.io/FahadShovon/full/ZEQZOBL)
 - Day 18 [Some clip path practice](https://codepen.io/FahadShovon/full/oNbOdWr)
 - Day 19 [A payment cart](https://codepen.io/FahadShovon/full/abdrOLO)
+- Day 20 [A success page](https://codepen.io/FahadShovon/full/zYrQRjY)

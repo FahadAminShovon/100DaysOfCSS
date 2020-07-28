@@ -1,0 +1,59 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #80ded9, #267871);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.tickIcon {
+  position: absolute;
+  transform: scale(6);
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  top: 40%;
+  opacity: 0;
+  border-radius: 50%;
+  border: 1px solid #267871;
+  background: #267871;
+  box-shadow: 0 4px 8px 0 rgba(8, 75, 131, 0.2);
+}
+
+.tickIcon:hover{
+    transform: scale(6.2);
+    top: 75%;
+
+}
+
+.tickDiv {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+}
+
+.textDiv {
+    box-sizing: border-box;
+    height: 50vh;
+    width: 100vw;
+    text-align: center;
+    padding: 2rem ;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+    word-wrap: break-word;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+
+}
