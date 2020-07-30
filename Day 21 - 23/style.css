@@ -1,0 +1,57 @@
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+:root{
+    --color-text-general: rgb(39, 38, 38);
+    --color-name: rgb(95, 155, 184);
+    --color-circle-border: #FFF;
+    --color-section-bullet: rgb(68, 114, 196);
+    --color-profile-link : rgb(140, 200, 229);
+    --color-project-link : rgb(45, 105, 134);
+    --color-primary-lite: rgb(235, 232, 232);
+    --color-primay-black: rgb(39, 38, 38);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.56rem;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(86, 88, 79);
+}
+
+.left {
+    height: 100vh;
+    width: 25vw;
+    background-color: var(--color-primay-black);
+    position: fixed;
+}
+
+.right {
+    font-family: 'Bebas Neue', cursive;
+    height: 100vh;
+    width: 75vw;
+    background-color: var(--color-primary-lite);
+    margin-left: 25vw;
+    position: relative;
+}
+
+
+.right header{
+    position: relative;
+    left: 7%;
+    top: 5%;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+.right h1 {
+    color: var(--color-name);
+    font-weight: bold;
+}
