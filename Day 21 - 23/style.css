@@ -22,13 +22,14 @@ h3 {
 
 .container {
     height: 100vh;
-    width: 100vw;
+    width: 793px;
+    margin: 0px auto;
     background-color: rgb(86, 88, 79);
 }
 
 .left {
     height: 100vh;
-    width: 25vw;
+    width: 198.25px;
     background-color: var(--color-primay-black);
     position: fixed;
 }
@@ -36,15 +37,15 @@ h3 {
 .right {
     font-family: 'Bebas Neue', cursive;
     height: 100vh;
-    width: 75vw;
+    width: calc(594.75px);
     background-color: var(--color-primary-lite);
-    margin-left: 25vw;
+    margin-left: 198.25px;
     position: relative;
 }
 
 
 .right header{
-    position: relative;
+    position: absolute;
     left: 7%;
     top: 5%;
     text-transform: uppercase;
