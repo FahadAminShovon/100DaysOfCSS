@@ -21,33 +21,35 @@ h3 {
 }
 
 .container {
-    height: 100vh;
-    width: 793px;
+    height: 29.7cm;
+    width: 21cm;
     margin: 0px auto;
     background-color: rgb(86, 88, 79);
 }
 
 .left {
     height: 100vh;
-    width: 198.25px;
+    width: 7.68cm;
     background-color: var(--color-primay-black);
     position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .right {
     font-family: 'Bebas Neue', cursive;
-    height: 100vh;
-    width: calc(594.75px);
+    height: 89.1cm;
+    width: 13.32cm;
     background-color: var(--color-primary-lite);
-    margin-left: 198.25px;
+    margin-left: 7.68cm;
     position: relative;
 }
 
 
 .right header{
     position: absolute;
-    left: 7%;
-    top: 5%;
+    left: 2.2rem;
+    top: 3rem;
     text-transform: uppercase;
     line-height: 2.5rem;
 }
