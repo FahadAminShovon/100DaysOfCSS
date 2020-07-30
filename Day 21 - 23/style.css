@@ -16,8 +16,20 @@ h1 {
     font-size: 2.5rem;
 }
 
-h3 {
+h2 {
     font-size: 1.56rem;
+}
+
+h3 {
+    font-size: 0.9375rem;
+}
+
+h4 {
+    font-size: 0.895rem;
+}
+
+p {
+    font-size: 0.8125rem;
 }
 
 .container {
@@ -34,6 +46,9 @@ h3 {
     position: fixed;
     overflow-x: hidden;
     overflow-y: scroll;
+    font-size: 0.8125rem;
+    line-height: 1.3rem;
+    text-align: left;
 }
 
 .right {
@@ -56,5 +71,118 @@ h3 {
 
 .right h1 {
     color: var(--color-name);
+    font-weight: bold;
+}
+
+.left {
+    color: var(--color-primary-lite);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dp img {
+    display: block;
+    height: 150px;
+    width: 150px;
+    border: 1px solid var(--color-primary-lite);
+    border-radius: 50%;
+    margin: 0px auto;
+    
+}
+
+.dp {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.about-me {
+    height: auto;
+    width: auto;
+    margin: 2rem 0;
+}
+
+.section-header{
+    font-family: inherit;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    display: flex;
+}
+
+.section-name{
+    white-space: nowrap; 
+    text-transform: uppercase;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    margin-left: 0.1875rem;
+    margin-top: 0.6rem;
+}
+
+.left .line {
+    background-color: var(--color-primary-lite);
+}
+
+.left .description {
+    font-style: inherit;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding: 1rem 1rem 1rem 2rem;
+    height: auto;
+    width: 100%;
+}
+
+.contact-info-sub {
+    padding-bottom: 1rem;
+}
+
+.contact-info-sub-header {
+    font-weight: bold !important;
+}
+
+.description ul {
+    padding-left: 1.5rem;
+}
+
+.description li {
+    list-style: none;
+    position: relative;
+}
+
+.description li img {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 20px;
+    width: auto;
+    padding-top: 10px;
+    margin-right: 4px;
+}
+
+.profile-link {
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    transform-origin: left;
+    transition: all 250ms ease-out 200ms;
+}
+
+.profile-link:hover {
+    transform: scale(1.1);
+}
+
+.profile-link img{
+    display: block;
+    height: 20px;
+    width: 20px;
+    margin-right: 0.3rem;
+    border: 1px solid var(--color-profile-link);
+    border-radius: 50%;
+    background-color: var(--color-profile-link);
+}
+
+.profile-link a {
+    display: flex;
+    text-decoration: none;
+    color: var(--color-profile-link);
     font-weight: bold;
 }
