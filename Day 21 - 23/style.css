@@ -294,3 +294,23 @@ main li {
 .info-sec {
     margin-top: 3rem;
 }
+
+main a{
+    text-decoration: none;
+    color: var(--color-project-link);
+    font-weight: 600;
+    transition: all 250ms ease-out;
+    display: inline-block;
+}
+
+main a:hover{
+    font-weight: 700;
+}
+
+#projects .title{
+    padding: 1rem
+}
+
+.ssl .divider::after{
+    top: 1.7rem;
+}
