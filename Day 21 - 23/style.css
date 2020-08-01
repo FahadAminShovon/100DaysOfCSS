@@ -127,6 +127,19 @@ p {
     width: 100%;
 }
 
+.left::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.left::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.left::-webkit-scrollbar-thumb {
+  background-color: rgb(140, 200, 229);
+  outline: 1px solid slategrey;
+}
+
 .contact-info-sub {
     padding-bottom: 1rem;
 }
@@ -211,7 +224,7 @@ p {
 }
 
 main {
-padding: 1rem 1rem 1rem 2rem;
+    padding: 1rem 1rem 2.5rem 2rem;
    font-family: 'Open Sans', sans-serif;
    line-height: 1.3;;
 }
@@ -313,4 +326,31 @@ main a:hover{
 
 .ssl .divider::after{
     top: 1.7rem;
+}
+
+#awards img ,#projects img{
+    position: relative;
+    top: 1px;
+}
+
+#awards .divider::after{
+    position: relative;
+    top: 15px;
+}
+
+#awards .title, #languages .title{
+    background-color: inherit;
+    padding: 0.7rem;
+}
+
+#skills .divider::after {
+    top: 8px;
+}
+
+#languages .title{
+    padding-bottom: 0px;
+}
+
+#languages ul{
+    padding-bottom: 0px;
 }
