@@ -18,4 +18,4 @@
 - Day 18 [Some clip path practice](https://codepen.io/FahadShovon/full/oNbOdWr)
 - Day 19 [A payment cart](https://codepen.io/FahadShovon/full/abdrOLO)
 - Day 20 [A success page](https://codepen.io/FahadShovon/full/zYrQRjY)
-- Day 21-26[Online resume v1](https://fahadaminshovon.github.io/resume/)
+- Day 21-26 [Online resume v1](https://fahadaminshovon.github.io/resume/)
