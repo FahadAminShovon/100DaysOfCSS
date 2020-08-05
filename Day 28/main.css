@@ -1,0 +1,218 @@
+body {
+  background: #5CA2C6;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.head {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 10px solid black;
+  background: white;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.head::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset -22px 5px 0px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -22px 5px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.head::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  background: white;
+  margin-top: 300px;
+  border: 10px solid black;
+}
+
+.left,
+.right {
+  background: black;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left {
+  margin-left: -180px;
+}
+
+.right {
+  margin-right: -180px;
+}
+
+.left::before,
+.right::before {
+  content: '';
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset -22px 5px 0px 3px rgba(255, 255, 255, 0.164);
+          box-shadow: inset -22px 5px 0px 3px rgba(255, 255, 255, 0.164);
+}
+
+.left::after,
+.right::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.right::after {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 5px solid white;
+}
+
+.cutout {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: -50px;
+}
+
+.mouth {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  border: 10px solid black;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-clip-path: circle(60% at 49% 100%);
+          clip-path: circle(60% at 49% 100%);
+  top: 3rem;
+}
+
+.mouth::before, .mouth::after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 10px solid black;
+  top: 102px;
+  left: -9px;
+  -webkit-clip-path: circle(50% at 0 0);
+          clip-path: circle(50% at 0 0);
+}
+
+.mouth::after {
+  left: 140px;
+  top: 107px;
+  -webkit-clip-path: circle(50% at 100% 0);
+          clip-path: circle(50% at 100% 0);
+}
+
+.body {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  background-color: #008cff;
+  top: 350px;
+  border: 10px solid black;
+  border-radius: 100% 100% 100% 100% / 100% 100% 0% 0%;
+}
+
+.body::before, .body::after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 20px;
+  top: 30px;
+}
+
+.body::before {
+  border-right: 10px solid black;
+}
+
+.body::after {
+  border-left: 10px solid black;
+  right: 0;
+}
+
+.bg {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: -100px;
+  border-radius: 30%;
+  top: 20px;
+  -webkit-box-shadow: 400px 100px 0 0 rgba(0, 0, 0, 0.15), 50px 150px 0 0 rgba(0, 0, 0, 0.15), 400px 250px 0 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 400px 100px 0 0 rgba(0, 0, 0, 0.15), 50px 150px 0 0 rgba(0, 0, 0, 0.15), 400px 250px 0 0 rgba(0, 0, 0, 0.15);
+  -webkit-animation: bgAnim 3s infinite alternate;
+          animation: bgAnim 3s infinite alternate;
+}
+
+@-webkit-keyframes bgAnim {
+  from {
+    -webkit-box-shadow: 0px 100px 0 0 rgba(0, 0, 0, 0.15), 0px 150px 0 0 rgba(0, 0, 0, 0.15), 0px 250px 0 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 100px 0 0 rgba(0, 0, 0, 0.15), 0px 150px 0 0 rgba(0, 0, 0, 0.15), 0px 250px 0 0 rgba(0, 0, 0, 0.15);
+  }
+  to {
+    -webkit-box-shadow: 400px 100px 0 0 rgba(0, 0, 0, 0.15), 50px 150px 0 0 rgba(0, 0, 0, 0.15), 400px 250px 0 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 400px 100px 0 0 rgba(0, 0, 0, 0.15), 50px 150px 0 0 rgba(0, 0, 0, 0.15), 400px 250px 0 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+@keyframes bgAnim {
+  from {
+    -webkit-box-shadow: 0px 100px 0 0 rgba(0, 0, 0, 0.15), 0px 150px 0 0 rgba(0, 0, 0, 0.15), 0px 250px 0 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 100px 0 0 rgba(0, 0, 0, 0.15), 0px 150px 0 0 rgba(0, 0, 0, 0.15), 0px 250px 0 0 rgba(0, 0, 0, 0.15);
+  }
+  to {
+    -webkit-box-shadow: 400px 100px 0 0 rgba(0, 0, 0, 0.15), 50px 150px 0 0 rgba(0, 0, 0, 0.15), 400px 250px 0 0 rgba(0, 0, 0, 0.15);
+            box-shadow: 400px 100px 0 0 rgba(0, 0, 0, 0.15), 50px 150px 0 0 rgba(0, 0, 0, 0.15), 400px 250px 0 0 rgba(0, 0, 0, 0.15);
+  }
+}
+/*# sourceMappingURL=main.css.map */
