@@ -21,3 +21,5 @@
 - Day 21-26 [Online resume v1](https://fahadaminshovon.github.io/resume/)
 - Day 27 [Restyle sort simulator](https://fahadaminshovon.github.io/sortingsimulator/)
 - Day 28 [A random character](https://codepen.io/FahadShovon/full/XWdWBYw)
+- Day 29 [Input animation](https://codepen.io/FahadShovon/full/QWNwdNg)
+- Day 30 [Netflix landing page](https://codepen.io/FahadShovon/full/abNzQoj)

@@ -61,6 +61,7 @@ body {
   border-radius: 50%;
   width: 175px;
   height: 175px;
+  left: 50%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +72,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 
 .left {
@@ -118,6 +120,7 @@ body {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-bottom: -50px;
+  top: 60%;
 }
 
 .mouth {
