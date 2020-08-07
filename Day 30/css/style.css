@@ -382,4 +382,9 @@ img {
   #tab-2-content .tab-2-content-bottom {
     grid-template-columns: 1fr;
   }
+
+  .btn-xl {
+    font-size: 1rem;
+    padding: 1rem 1.4rem;
+  }
 }
