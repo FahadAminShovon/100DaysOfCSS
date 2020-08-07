@@ -54,7 +54,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
 }
 
 .left {
@@ -112,6 +111,7 @@ body {
     align-items: center;
     clip-path: circle(60% at 49% 100%);
     top: 3rem;
+    z-index: 2;
 
     &::before,
     &::after {

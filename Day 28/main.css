@@ -72,7 +72,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2;
 }
 
 .left {
@@ -135,6 +134,7 @@ body {
   -webkit-clip-path: circle(60% at 49% 100%);
           clip-path: circle(60% at 49% 100%);
   top: 3rem;
+  z-index: 2;
 }
 
 .mouth::before, .mouth::after {
