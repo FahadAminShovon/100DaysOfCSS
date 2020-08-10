@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #dde1e7;
+    height: 100vh;
+    box-sizing: border-box;
+    /* flex-direction: column; */
+}
+
+.neumorphism-1, .neumorphism-2, .neumorphism-3{
+    margin: 7.5px;
+    height: 150px;
+    width: 150px;
+    background-color: #dde1e7;
+    border-radius: 5px;
+    box-shadow: -3px -3px 7px #ffffff73,
+                3px 3px 5px rgba(94, 104, 121, .288);
+    transition: box-shadow 10000ms;
+}
+
+.neumorphism-1:hover{
+    box-shadow: inset -3px -3px 7px #ffffff73,
+        inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+
+.neumorphism-2{
+    box-shadow: inset -3px -3px 7px #ffffff73,
+            inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
+.neumorphism-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.neumorphism-3::after{
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: inset -3px -3px 7px #ffffff73,
+        inset 3px 3px 5px rgba(94, 104, 121, .288);
+}
+
