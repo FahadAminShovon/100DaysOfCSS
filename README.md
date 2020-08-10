@@ -24,3 +24,4 @@
 - Day 29 [Input animation](https://codepen.io/FahadShovon/full/QWNwdNg)
 - Day 30 [Netflix landing page](https://codepen.io/FahadShovon/full/abNzQoj)
 - Day 33 [Neumorphism sytle](https://codepen.io/FahadShovon/full/gOrpBrj)
+- Day 33.5 [analogue clock](http://127.0.0.1:5500/Day%2033/clock/index.html)
