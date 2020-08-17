@@ -27,3 +27,5 @@
 - Day 33.5 [analogue clock](http://127.0.0.1:5500/Day%2033/clock/index.html)
 - Day 34 [A responsive nav with js](https://codepen.io/FahadShovon/full/JjXYpPX)
 - Day 35 [A fancy Text Effect](https://codepen.io/FahadShovon/full/dyMGGBX)
+- Day 36 - 39 [Twitter clone](https://github.com/FahadAminShovon/tweeter-clone)
+- Day 40 [Type writter function](https://codepen.io/FahadShovon/full/LYNZydp)
