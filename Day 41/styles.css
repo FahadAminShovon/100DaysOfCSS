@@ -1,0 +1,67 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./fonts/Charlie\ don\'t\ surf.ttf);
+}
+
+* {
+    font-family: myFirstFont;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://cdn.mos.cms.futurecdn.net/Q55k5sG4J7VoUrzsxauDzE-1200-80.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0433553d;
+    height: 15rem;
+    width: 700px;
+    color: #fff;
+    font-size: 5rem;
+    border: 5px solid inherit;
+    box-shadow: 3px 3px 50px #032238,
+                -3px -3px 50px #011a2cad;
+    position: relative;
+    top: -30%;
+}
+
+.timer * {
+    margin: 15px;
+}
+
+
+@media (max-width: 600px){
+    body{
+        height: 100vh;
+        width: 100vw;
+        background: url(https://1.bp.blogspot.com/-dLdWcGDNgG0/XWniX_wUoeI/AAAAAAAAYac/mK7aTdwRJl01FAmeyoha24Q4coiOuS3FACLcBGAs/s2560/the_boys_2019_tv_series_1080.jpg) no-repeat;
+        background-position: 50% 30%;
+        size: cover;
+        position: relative;
+    }
+
+    .timer{
+        box-sizing: border-box;
+        height: 10rem;
+        width: 90vw;
+        font-size: 3rem;
+        box-shadow: 3px 3px 50px #661310,
+            -3px -3px 50px #661310;
+        top: -0%;
+        background: #66131070;
+    }
+
+}
+
+
+
