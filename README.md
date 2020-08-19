@@ -29,3 +29,5 @@
 - Day 35 [A fancy Text Effect](https://codepen.io/FahadShovon/full/dyMGGBX)
 - Day 36 - 39 [Twitter clone](https://github.com/FahadAminShovon/tweeter-clone)
 - Day 40 [Type writter function](https://codepen.io/FahadShovon/full/LYNZydp)
+- Day 41 [The boys season 2 countdown](https://fahadaminshovon.github.io/the-boys-season-2-countdown/)
+- Day 42 [Flipable card](https://codepen.io/FahadShovon/full/OJNRQOW)
