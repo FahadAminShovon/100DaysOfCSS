@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    text-align: center;
 }
 body{
     height: 100vh;
@@ -25,4 +26,8 @@ body{
     display: flex;
     width: 100%;
     z-index: -1;
+}
+
+button{
+    margin-top: 15px;
 }
