@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	background-color: rgb(139, 62, 85);
+	font-family: "Poppins", sans-serif;
+}
+
+a, button {
+	font-family: "Poppins", sans-serif;
+}
+
+.dropdown {
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+}
+
+.products, .projects {
+	position: relative;
+}
+
+.projects ul, .products ul {
+	position: absolute;
+	background: white;
+	margin-top: 10px;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	border-radius: 5px;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 100;
+	transform: translateY(-10px);
+	transition: all 0.4s ease;
+}
+
+.projects li, .products li {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.projects li:hover, .products li:hover {
+	background: rgb(218, 179, 191);
+}
+
+.projects a, .products a {
+	text-decoration: none;
+	color: black;
+}
+
+.dropdown button, button a {
+	background: none;
+	border: none;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.dropdown button:hover, button a:hover {
+	color: rgb(224, 224, 224);
+}
+
+.projects button:focus+ul, .products button:focus+ul {
+	opacity: 1;
+	pointer-events: all;
+	transform: translateY(0);
+}
+
+button {
+	outline: 0px;
+}
