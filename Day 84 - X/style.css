@@ -78,6 +78,44 @@ h4{
 }
 
 /* mobile styles */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.site-nav {
+	margin: 0 20px;
+}
+
+.site-nav ul {
+	display: none;
+}
+
+.site-nav h1{
+	grid-column: 1/4;
+	grid-row: 1;
+	padding: 10px;
+	border-bottom: 3px solid var(--primary);
+}
+
+#welcome {
+	padding: 0 20px 20px 20px;
+}
+
+.welcome-text {
+	grid-column: 1/6;
+}
+
+.welcome-img{
+	grid-column: 6/9;
+}
+
+.welcome-img img{
+	width: 200%;
+}
+.welcome-text a{
+	margin: 20px 0;
+}
 
 /* small tablet styls */
 
